@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1f3c3cb2ad.js" crossorigin="anonymous"></script>
+    <style>
+        #screen{
+            width: 100%;
+            height: 710px;
+            border: 1px solid black;
+        }
+
+        #navbar{
+            width: 100%;
+            height: 50px;
+            border: 1px solid darkgray;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #logo{
+            width: 10%;
+            /* border: 2px solid red; */
+        }
+        #navi{
+            width: 30%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #search{
+            width: 35%;
+            /* border: 2px solid red; */
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+        #profile{
+            width: 15%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #body{
+            width: 100%;
+            height: 500px;
+            border: 1px solid darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">LOGO</div>
+            <div id="navi">
+                <div>Men</div>
+                <div>Women</div>
+                <div>Kids</div>
+                <div>Home & living</div>
+                <div>Beauty</div>
+                <div>Studio</div>
+            </div>
+            <div id="search">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>
+                    <input type="text" style="border: none; outline: none;">
+                </div>
+            </div>
+            <div id="profile">
+                <div id="pp">
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <div>Profile</div>
+                </div>
+                <div id="wishlist">
+                    <div><i class="fa-solid fa-heart"></i></div>
+                    <div>wishlist</div>
+                </div>
+                <div id="cart">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div>Cart</div>
+                </div>
+            </div>
+        </div>
+        <div id="body"></div>
+    </div>
+</body>
+</html>
