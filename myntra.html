@@ -13,7 +13,7 @@
             font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
         }
-        
+
         #screen {
             width: 100%;
             /* border: 1px solid green; */
@@ -22,40 +22,49 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         /* --------------------------navbar----------------------------------- */
         #navbar {
             width: 100%;
-            height: 8%;
-            padding: 1%;
+            height: 72px;
+            /* padding: 1%; */
             /* border: 1px solid darkgray; */
             background-color: white;
             display: flex;
             justify-content: space-evenly;
-            /* position: fixed; */
-            font-weight: 700;
+            position: fixed;
+            font-weight: 600;
+            font-size: 1.2vw;
+            box-shadow: 0 2px 4px 0 rgba(78, 76, 76, 0.4);
         }
 
         #logo {
-            width: 10%;
+            width: 4%;
+            height: 34px;
+            padding: 2%;
+            /* height: 5%; */
+            padding: 1.5%;
             /* border: 2px solid red; */
         }
 
         #navi {
-            width: 30%;
+            padding: 1.5%;
+            width: 28%;
             /* border: 2px solid red; */
             display: flex;
             justify-content: space-evenly;
         }
 
         #search {
-            width: 35%;
+            padding: 1.5%;
+            width: 30%;
             /* border: 2px solid red; */
             display: flex;
             /* justify-content: space-evenly; */
         }
 
         #profile {
+            padding: 1.5%;
             width: 15%;
             /* border: 2px solid red; */
             display: flex;
@@ -65,8 +74,15 @@
 
         /* --------------------------body----------------------------------- */
         #body {
-            display: flex;
+            /* width: 60%; */
+            display: flex;  
             justify-content: space-around;
+        }
+
+        #info{
+            width: 100%;
+            height: 78px;
+            /* border: 1px solid blue; */
         }
 
         #body>div:nth-child(1) {
@@ -75,29 +91,66 @@
         }
 
         #body>div:nth-child(2) {
-            border: 1px solid palevioletred;
+            /* border: 1px solid palevioletred; */
             width: 78%;
         }
 
         #body>div:nth-child(1)>div {
             margin-left: 7%;
-            border-bottom: 1px solid #010108;
+            /* margin-top: 4%; */
+            border-bottom: 1px solid #28282a;
         }
 
         #body>div:nth-child(1)>div>h4 {
             margin-top: 4%;
-            margin-bottom: 4%;
+            margin-bottom: 7%;
             font-size: 1vw;
         }
 
-        #body>div:nth-child(1)>div>input,
-        label {
-            margin-bottom: 4%;
+        #body>div:nth-child(1)>div>input,label {
+            margin-bottom: 5%;
             font-size: 1vw;
         }
 
-        #products{
+        #products {
+            width: 100%;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #products>div {
+            width: 18%;
+            height: 375px;
+            /* border: 1px solid blue; */
+            margin-top: 1.5%;
+            margin-bottom: 3%;
+            /* margin: 0.9%; */
+        }
+
+        #products>div:hover {
+            /* border: 1px solid #010108; */
+            box-shadow: 0 0 30px rgba(1, 1, 1, 0.2);
+        }
+
+        #products>div>img {
+            width: 100%;
+            height: 72%;
+            /* border: 1px solid blue; */
+        }
+
+        #products>div>h4,
+        p {
+            margin-top: 1.5%;
+            margin-left: 5%;
+        }
+
+        #products>div>h4:nth-child(2) {
+            font-weight: 500;
+        }
+
+        #products>div>p:nth-child(5) {
+            color: red;
         }
     </style>
 </head>
@@ -105,7 +158,9 @@
 <body>
     <div id="screen">
         <div id="navbar">
-            <div id="logo">LOGO</div>
+            <div id="logo">
+                <img src="./img/myntra-Logo-PNG_zqavvs.png" height="100%" width="100%">
+            </div>
             <div id="navi">
                 <div>Men</div>
                 <div>Women</div>
@@ -138,6 +193,10 @@
             </div>
         </div>
 
+        <div id="info">
+           
+        </div>
+
         <div id="body">
             <div>
                 <div>
@@ -168,8 +227,8 @@
                     <label>Jackets(59)</label><br>
                     <input type="checkbox" name="" id="">
                     <label>Shorts(44)label><br>
-                    <input type="checkbox" name="" id="">
-                    <label>Flip Flops(28)</label>
+                        <input type="checkbox" name="" id="">
+                        <label>Flip Flops(28)</label>
                 </div>
 
                 <div>
@@ -199,61 +258,147 @@
                     <input type="checkbox" name="" id="">
                     <label>HIGHLANDER(5079)</label><br>
                 </div>
+
+                <div>
+                    <h4>DISCOUNT RANGE</h4>
+                    <input type="radio">
+                    <label>10% and above</label><br>
+                    <input type="radio">
+                    <label>20% and above</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>30% and above</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>40% and above</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>50% and above</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>60% and above</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>70% and above</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>80% and above</label><br>
+                </div>
             </div>
             <div id="products">
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
                 <div>
-                    <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg" alt="">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
                     <h4>PUMA</h4>
                     <p>T-Shirts</p>
                     <h4>4599</h4>
+                    <p>Only Few left!!</p>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
+                    <h4>PUMA</h4>
+                    <p>T-Shirts</p>
+                    <h4>4599</h4>
+                    <p>Only Few left!!</p>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
+                    <h4>PUMA</h4>
+                    <p>T-Shirts</p>
+                    <h4>4599</h4>
+                    <p>Only Few left!!</p>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
+                    <h4>PUMA</h4>
+                    <p>T-Shirts</p>
+                    <h4>4599</h4>
+                    <p>Only Few left!!</p>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
+                    <h4>PUMA</h4>
+                    <p>T-Shirts</p>
+                    <h4>4599</h4>
+                    <p>Only Few left!!</p>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
+                    <h4>PUMA</h4>
+                    <p>T-Shirts</p>
+                    <h4>4599</h4>
+                    <p>Only Few left!!</p>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/18982220/2022/8/16/d655cb7b-57a5-4fc5-8791-aa7927e77de41660646438406-Manchester-City-FC--Training-Jersey-1541660646438040-5.jpg"
+                        alt="">
+                    <h4>PUMA</h4>
+                    <p>T-Shirts</p>
+                    <h4>4599</h4>
+                    <p>Only Few left!!</p>
                 </div>
             </div>
         </div>
