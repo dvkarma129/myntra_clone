@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <script src="https://kit.fontawesome.com/1f3c3cb2ad.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        #screen {
+            width: 100%;
+            /* border: 1px solid green; */
+            /* height: 400px; */
+            /* display: table-column; */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* --------------------------navbar----------------------------------- */
+        #navbar {
+            width: 100%;
+            height: 8%;
+            padding: 1%;
+            /* border: 1px solid darkgray; */
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            /* position: fixed; */
+            font-weight: 700;
+        }
+
+        #logo {
+            width: 10%;
+            /* border: 2px solid red; */
+        }
+
+        #navi {
+            width: 30%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #search {
+            width: 35%;
+            /* border: 2px solid red; */
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+
+        #profile {
+            width: 15%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        /* --------------------------body----------------------------------- */
+        #body {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #body>div:nth-child(1) {
+            /* border: 1px solid magenta; */
+            width: 16%;
+        }
+
+        #body>div:nth-child(2) {
+            border: 1px solid palevioletred;
+            width: 78%;
+        }
+
+        #body>div:nth-child(1)>div {
+            margin-left: 7%;
+            border-bottom: 1px solid #010108;
+        }
+
+        #body>div:nth-child(1)>div>h4 {
+            margin-top: 4%;
+            margin-bottom: 4%;
+            font-size: 1vw;
+        }
+
+        #body>div:nth-child(1)>div>input,
+        label {
+            margin-bottom: 4%;
+            font-size: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">LOGO</div>
+            <div id="navi">
+                <div>Men</div>
+                <div>Women</div>
+                <div>Kids</div>
+                <div>Home & living</div>
+                <div>Beauty</div>
+                <div>Studio</div>
+            </div>
+            <div id="search">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>
+                    <input type="text" style="border: none; outline: none;">
+                </div>
+            </div>
+            <div id="profile">
+                <div id="pp">
+                    <div><i class="fa-solid fa-user"></i></div>
+                    <!-- <div>Profile</div> -->
+                </div>
+                <div id="wishlist">
+                    <div><i class="fa-solid fa-heart"></i></div>
+                    <!-- <div>wishlist</div> -->
+                </div>
+                <div id="cart">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <!-- <div>Cart</div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="body">
+            <div>
+                <div>
+                    <h4>FILTERS</h4>
+                    <input type="radio">
+                    <label for>MALE</label><br>
+                    <input type="radio">
+                    <label for>FEMALE</label><br>
+                    <input type="radio">
+                    <label for>BOYS</label><br>
+                    <input type="radio">
+                    <label for>GIRLS</label>
+                </div>
+
+                <div>
+                    <h4>CATEGORIES</h4>
+                    <input type="checkbox" name="" id="">
+                    <label>Jeans(398)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>T-Shirts</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Shirts(147)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Sweatshirts(112)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Trousers(74)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Jackets(59)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Shorts(44)label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Flip Flops(28)</label>
+                </div>
+
+                <div>
+                    <h4>PRICE</h4>
+                    <input type="checkbox" name="" id="">
+                    <label>Rs. 538 to Rs. 2954(1123)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Rs. 2954 to Rs. 5370(116)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Rs. 5370 to Rs. 7786(5)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>Rs. 7786 to Rs. 10202(1)</label><br>
+                </div>
+
+                <div>
+                    <h4>BRANDS</h4>
+                    <input type="checkbox" name="" id="">
+                    <label>Roadster(10719)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>999Store(8813)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>DailyObjects(6649)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>eCraftIndia(6419)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>SOJANYA(6062)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label>HIGHLANDER(5079)</label><br>
+                </div>
+            </div>
+            <div>2</div>
+        </div>
+    </div>
+</body>
+
+</html>
